@@ -12,7 +12,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 echo "zsh-syntax-highlighting"
 mkdir -p ~/.oh-my-zsh/custom/plugins
-git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my.zsh/custom/plugins/zsh-syntax-highlighting
+git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 echo "Powerline"
 sudo pip install -t /usr/local/lib/python2.7/site-packages git+git://github.com/Lokaltog/powerline
