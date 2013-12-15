@@ -23,10 +23,12 @@ mkdir ~/config
 
 echo "First dotfiles"
 git clone git@github.com:ghostbar/dotfiles.git ~/config/dotfiles
+pushd ~/config/dotfiles
 sh ~/config/dotfiles/install.sh -a
 
 echo "Now dotvim"
 git clone git@github.com:ghostbar/dotvim.git ~/config/dotvim
+pushd ~/config/dotvim
 sh ~/config/dotvim/install.sh
 
 echo "DONE!!!! :D :D :D"
