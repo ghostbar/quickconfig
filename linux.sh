@@ -14,7 +14,7 @@ curl -L http://install.ohmyz.sh | sh
 
 echo "zsh-syntax-highlighting"
 mkdir -p ~/.oh-my-zsh/custom/plugins
-git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 echo "Powerline"
 sudo pip install -t /usr/local/lib/python2.7/site-packages git+git://github.com/Lokaltog/powerline
@@ -24,12 +24,12 @@ echo "Now dotfiles"
 mkdir ~/config
 
 echo "First dotfiles"
-git clone git@github.com:ghostbar/dotfiles.git ~/config/dotfiles
+git clone git://github.com/ghostbar/dotfiles.git ~/config/dotfiles
 pushd ~/config/dotfiles
 sh ./install.sh -a
 
 echo "Now dotvim"
-git clone git@github.com:ghostbar/dotvim.git ~/config/dotvim
+git clone git://github.com/ghostbar/dotvim.git ~/config/dotvim
 pushd ~/config/dotvim
 sh ./install.sh
 
