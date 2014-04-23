@@ -1,5 +1,5 @@
 echo "Installing basic packages: git tig tmux zsh vim-nox python-setuptools"
-sudo apt-get install git tig tmux zsh vim-nox python-setuptools -y
+sudo apt-get install git tig tmux zsh vim-nox python-setuptools curl -y
 
 echo "Change terminal to zsh"
 chsh -s /usr/bin/zsh
@@ -8,7 +8,7 @@ echo "Installing pip"
 sudo easy_install pip
 
 echo "Installing oh-my-zsh"
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+curl -L http://install.ohmyz.sh | sh
 
 echo "zsh-syntax-highlighting"
 mkdir -p ~/.oh-my-zsh/custom/plugins
@@ -24,12 +24,12 @@ mkdir ~/config
 echo "First dotfiles"
 git clone git@github.com:ghostbar/dotfiles.git ~/config/dotfiles
 pushd ~/config/dotfiles
-sh ~/config/dotfiles/install.sh -a
+sh ./install.sh -a
 
 echo "Now dotvim"
 git clone git@github.com:ghostbar/dotvim.git ~/config/dotvim
 pushd ~/config/dotvim
-sh ~/config/dotvim/install.sh
+sh ./install.sh
 
 echo "DONE!!!! :D :D :D"
 echo "\n"
