@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Installing basic packages: git tig tmux zsh vim-nox python-setuptools"
 sudo apt-get install git tig tmux zsh vim-nox python-setuptools curl -y
 

@@ -9,4 +9,4 @@ Download `linux.sh`:
 
     wget https://github.com/ghostbar/quickconfig/raw/master/linux.sh
 
-`sh linux.sh`
+`bash linux.sh`
