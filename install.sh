@@ -21,7 +21,7 @@ Licensed under the MIT terms.
 
 basicAptGet() {
   echo "Installing basic packages: git tig tmux zsh vim-nox python-setuptools"
-  sudo apt-get install git tig tmux zsh vim-nox python-setuptools curl -y
+  sudo apt-get install git tig tmux zsh vim-nox python-setuptools curl xclip -y
 }
 
 basicBrew() {

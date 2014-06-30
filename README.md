@@ -36,6 +36,7 @@ This will leave a shell with the following installed:
 + `zsh` and it's configs from [`ghostbar/dotfiles`](https://github.com/ghostbar/dotfiles), together with `prezto` (and defaults to `zsh` on the terminal).
 + `vim` and it's configs from [`ghostbar/dotvim`](https://github.com/ghostbar/dotvim).
 + `powerline` and it's configs from [`ghostbar/dotfiles`](https://github.com/ghostbar/dofiles).
++ `xclip` on Linux for copy and paste support on `tmux` and `vim`.
 + `curl`
 
 Known issues
