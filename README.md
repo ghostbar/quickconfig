@@ -1,6 +1,8 @@
 Quick Config
 ============
 
+![Screenshot](https://i.cloudup.com/bvwxtsZ7Ny.png)
+
 TL;DR
 -----
 
