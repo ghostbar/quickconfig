@@ -1,6 +1,8 @@
 Quick Config
 ============
 
+This is how ends up:
+
 ![Screenshot](https://i.cloudup.com/bvwxtsZ7Ny.png)
 
 TL;DR
