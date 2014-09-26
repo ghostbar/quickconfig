@@ -3,7 +3,7 @@
 help='
 Usage:
 
-zsh install.zsh [-l|--linux] [-m|--mac]
+bash install.sh [-l|--linux] [-m|--mac]
 
 Options
 
