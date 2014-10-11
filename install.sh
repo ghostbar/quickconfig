@@ -99,6 +99,12 @@ dotVim() {
   zsh ./install.zsh
 }
 
+updateDotVim() {
+  echo "Updating dotvim"
+  pushd ~/config/dotvim
+  git pull
+}
+
 showHelp() {
   echo "$version"
   echo "$help"
