@@ -48,6 +48,17 @@ installPrezto() {
   fi
 }
 
+updatePrezto() {
+  if [ ! -d ~/.zprezto ]; then
+    echo "There's no prezto to update"
+  else
+    echo "Updating prezto"
+    pushd ~/.zprezto
+    git pull
+    git submodule update --init --recursive
+  fi
+}
+
 installPowerline() {
   echo "Powerline"
   sudo pip install -t /usr/local/lib/python2.7/site-packages git+git://github.com/Lokaltog/powerline
