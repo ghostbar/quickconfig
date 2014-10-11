@@ -86,6 +86,12 @@ dotFiles() {
   zsh ./install.zsh -a
 }
 
+updateDotFiles() {
+  echo "Updating dotfiles"
+  pushd ~/config/dotfiles
+  git pull
+}
+
 dotVim() {
   echo "Now dotvim"
   git clone git://github.com/ghostbar/dotvim.git ~/config/dotvim
