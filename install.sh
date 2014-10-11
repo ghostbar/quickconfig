@@ -11,10 +11,11 @@ Options
 -h/--help               - Print help
 -l/--linux              - Install on Linux (Debian-based)
 -m/--mac                - Install on Mac OSX (Uses brew)
+-u/--update             - Updates an existing installation of quickconfig
 '
 
 version='
-Version: 0.2.0
+Version: 0.3.0
 © 2014, Jose Luis Rivas <me@ghostbar.co>
 Licensed under the MIT terms.
 '
