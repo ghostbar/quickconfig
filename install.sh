@@ -87,9 +87,13 @@ dotFiles() {
 }
 
 updateDotFiles() {
-  echo "Updating dotfiles"
-  pushd ~/config/dotfiles
-  git pull
+  if [ -d ~/config/dotfiles ]; then
+    echo "Updating dotfiles"
+    pushd ~/config/dotfiles
+    git pull
+  else
+    echo "Can't update dotfiles since they don't exist"
+  fi
 }
 
 dotVim() {
@@ -100,9 +104,13 @@ dotVim() {
 }
 
 updateDotVim() {
-  echo "Updating dotvim"
-  pushd ~/config/dotvim
-  git pull
+  if [ -d ~/config/dotvim ]; then
+    echo "Updating dotvim"
+    pushd ~/config/dotvim
+    git pull
+  else
+    echo "Can't update dotvim since it doesn't exists"
+  fi
 }
 
 showHelp() {
