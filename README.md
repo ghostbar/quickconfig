@@ -43,6 +43,13 @@ This will leave a shell with the following installed:
 + `xclip` on Linux for copy and paste support on `tmux` and `vim`.
 + `curl`
 
+How do I update this?
+---------------------
+
+    bash install.sh --update
+
+This will update your `powerline`, `prezto`, `dotfiles` and `dotvim`.
+
 Known issues
 ------------
 If `sh` is used instead of `bash` it will fail. `sh` does not have `pushd` on which this `install.sh` script depends heavily.
