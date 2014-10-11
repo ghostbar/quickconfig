@@ -121,6 +121,13 @@ installIt() {
   echo "Installed! Done!"
 }
 
+updateIt() {
+  updatePrezto
+  updatePowerline
+  updateDotFiles
+  updateDotVim
+}
+
 while test -n "$1"; do
   case $1 in
     -v|--version)
@@ -133,6 +140,9 @@ while test -n "$1"; do
     -m|--mac)
       basicBrew
       installIt
+      exit 0;;
+    -u|--update)
+      updateIt
       exit 0;;
     *)
       showHelp
