@@ -65,6 +65,13 @@ installPowerline() {
   sudo pip install git+git://github.com/Lokaltog/powerline
 }
 
+updatePowerline() {
+  echo "Updating Powerline"
+  sudo pip install --upgrade -t /usr/local/lib/python2.7/site-packages git+git://github.com/Lokaltog/powerline
+  sudo pip install --upgrade git+git://github.com/Lokaltog/powerline
+
+}
+
 basicDotFiles() {
   if [ ! -d ~/config && ! -e ~/config ]; then
     echo "Now dotfiles"
