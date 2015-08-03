@@ -56,6 +56,6 @@ If `sh` is used instead of `bash` it will fail. `sh` does not have `pushd` on wh
 
 License
 -------
-© 2014, Jose Luis Rivas <me@ghostbar.co>
+© 2014-2015, Jose-Luis Rivas `<me@ghostbar.co>`
 
 Licensed under the MIT terms.
