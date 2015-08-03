@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+# Determine what OS is running
+if [ "$(uname)" = "Darwin" ]; then
+  OS='mac'
+elif [ "$(expr substr ($uname -s) 1 5)" = "Linux"]; then
+  OS='linux'
+elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
+  OS='cygwin'
+fi
+
 help='
 Usage:
 
@@ -9,6 +18,7 @@ Options
 
 -v/--version            - Print version
 -h/--help               - Print help
+-i/--install            - Install on Linux or Mac OSX (will guess and do the right thing, either apt-get or brew)
 -l/--linux              - Install on Linux (Debian-based)
 -m/--mac                - Install on Mac OSX (Uses brew)
 -u/--update             - Updates an existing installation of quickconfig
@@ -28,6 +38,14 @@ basicAptGet() {
 basicBrew() {
   echo "Installing basic packages: git, tig, tmux, zsh, vim, python-setuptools"
   sudo brew install git tmux tig zsh vim python
+}
+
+autoBasic() {
+  if [ "$OS" = "linux" ]; then
+    basicAptGet
+  elif [ "$OS" = "mac" ]; then
+    basicBrew
+  fi
 }
 
 changeToZsh() {
@@ -141,6 +159,10 @@ while test -n "$1"; do
   case $1 in
     -v|--version)
       echo "$version"
+      exit 0;;
+    -i|--install)
+      autoBasic
+      installIt
       exit 0;;
     -l|--linux)
       basicAptGet
