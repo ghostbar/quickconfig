@@ -25,7 +25,7 @@ Options
 '
 
 version='
-Version: 0.4.0
+Version: 1.0.0
 © 2014-2015, Jose-Luis Rivas <me@ghostbar.co>
 Licensed under the MIT terms.
 '
@@ -53,11 +53,6 @@ changeToZsh() {
   chsh -s /usr/bin/zsh
 }
 
-installPip() {
-  echo "Installing pip"
-  sudo easy_install pip
-}
-
 installPrezto() {
   if [ ! -d ~/.zprezto ]; then
     echo "Installing prezto"
@@ -76,19 +71,6 @@ updatePrezto() {
     git pull
     git submodule update --init --recursive
   fi
-}
-
-installPowerline() {
-  echo "Powerline"
-  sudo pip install -t /usr/local/lib/python2.7/site-packages git+git://github.com/Lokaltog/powerline
-  sudo pip install git+git://github.com/Lokaltog/powerline
-}
-
-updatePowerline() {
-  echo "Updating Powerline"
-  sudo pip install --upgrade -t /usr/local/lib/python2.7/site-packages git+git://github.com/Lokaltog/powerline
-  sudo pip install --upgrade git+git://github.com/Lokaltog/powerline
-
 }
 
 basicDotFiles() {
@@ -139,9 +121,7 @@ showHelp() {
 
 installIt() {
   changeToZsh
-  installPip
   installPrezto
-  installPowerline
   basicDotFiles
   dotFiles
   dotVim
@@ -150,7 +130,6 @@ installIt() {
 
 updateIt() {
   updatePrezto
-  updatePowerline
   updateDotFiles
   updateDotVim
 }
