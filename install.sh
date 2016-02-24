@@ -74,7 +74,7 @@ updatePrezto() {
 }
 
 basicDotFiles() {
-  if [ ! -d ~/config && ! -e ~/config ]; then
+  if [ ! -d ~/config ] && [ ! -e ~/config ]; then
     echo "Now dotfiles"
     mkdir ~/config
   fi
