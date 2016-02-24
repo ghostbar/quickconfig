@@ -25,8 +25,8 @@ Options
 '
 
 version='
-Version: 1.0.0
-© 2014-2015, Jose-Luis Rivas <me@ghostbar.co>
+Version: 1.0.1
+© 2014-2016, Jose-Luis Rivas <me@ghostbar.co>
 Licensed under the MIT terms.
 '
 
