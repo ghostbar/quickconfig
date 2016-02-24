@@ -160,7 +160,7 @@ while test -n "$1"; do
   esac
 done
 
-if test -z $1; then
+if test -z "$1"; then
   showHelp
   exit 0
 fi
