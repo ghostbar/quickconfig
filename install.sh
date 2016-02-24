@@ -3,7 +3,7 @@
 # Determine what OS is running
 if [ "$(uname)" = "Darwin" ]; then
   OS='mac'
-elif [ "$(expr substr ($uname -s) 1 5)" = "Linux"]; then
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   OS='linux'
 elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
   OS='cygwin'
