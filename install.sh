@@ -37,7 +37,7 @@ basicAptGet() {
 
 basicBrew() {
   echo "Installing basic packages: git, tig, tmux, zsh, vim, python-setuptools"
-  sudo brew install git tmux tig zsh vim python
+  brew install git tmux tig zsh vim python
 }
 
 autoBasic() {
